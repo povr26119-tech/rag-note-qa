@@ -57,7 +57,7 @@ note_qa/
 1. 获取代码并进入项目目录：
 
    ```
-   git clone <仓库地址>
+   git clone https://github.com/povr26119-tech/rag-note-qa.git
    cd rag-note-qa
    ```
 
@@ -116,6 +116,12 @@ note_qa/
 2. 用 Streamlit 做网页界面并部署，拿到可访问的链接。
 3. 做技术文档助手：支持多文件、多轮追问（追问需先改写成完整问题再检索）、回答中给出原文出处。
 
-## 资料来源
+## 资料来源与许可
 
-`data/tinyrag_readme.md` 来自开源项目 tiny-universe 中的 TinyRAG 教程（`content/TinyRAG/readme.md`），仓库地址：<https://github.com/datawhalechina/tiny-universe>。版权和许可证归原作者所有，使用前请查看原仓库的许可证说明。
+知识库资料 data/tinyrag_readme.md 取自 Datawhale 的开源教程 tiny-universe 中的 TinyRAG 教程（content/TinyRAG/readme.md），未作修改。
+
+- 来源：https://github.com/datawhalechina/tiny-universe
+- 作者：Datawhale 及原项目贡献者
+- 许可证：CC BY-NC-SA 4.0（https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans）
+
+index.json 由上述资料切块、向量化后生成，属于对原资料的改编，同样按 CC BY-NC-SA 4.0 共享。上述资料及其衍生内容仅限非商业使用。本项目的代码部分与资料的许可相互独立。
