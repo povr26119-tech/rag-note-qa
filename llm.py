@@ -2,6 +2,8 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 
+NO_ANSWER = "资料里没有相关内容"
+
 load_dotenv()
 client = OpenAI(
     api_key=os.getenv("DEEPSEEK_API_KEY"),
@@ -34,7 +36,7 @@ def answer(question: str, chunks: list[str]) -> str:
     context = "\n\n".join(parts)
 
     prompt = f"""请只根据下面的资料回答问题。
-如果资料里没有相关内容，请直接回答：资料里没有相关内容。不要使用资料以外的知识。
+如果资料里没有相关内容，请直接回答：{NO_ANSWER}。不要使用资料以外的知识。
 
 {context}
 

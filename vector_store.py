@@ -1,5 +1,4 @@
 import json
-from embeddings import SiliconFlowEmbedding
 import numpy as np
 
 MODEL = "BAAI/bge-m3"
